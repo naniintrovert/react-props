@@ -1,18 +1,29 @@
 //import ClassComponent from './ClassComponent'
-import PropsExample from './PropsExample'
+//import PropsExample from './PropsExample'
 
+
+
+import StateExample from './StateExample'
+import FuncProps from './FuncProps'
+import DemoExample from './DemoExample'
+import Events from './Events'
 function App(){
 
   return (
-    <section>
-    <PropsExample name="Uttaman pradeep" age="23"/>
-    <PropsExample name="Nikitha"age="22"/>
+    <div>
+     <StateExample/>
+     <Events/>
+    {/*<DemoExample/>
+    <FuncProps bikename="duke" year="2003"/>
+    <DemoExample price="1st"/>
+    <DemoExample name="Uttaman pradeep"/>
+    <DemoExample age="25"/>
+        <h1>ready to race</h1>*/}
 
-        {/*<p>bsl_7beatz share and like the videos</p>
-        <h1> Support us  in Instagram</h1>
-        <img src="https://t4.ftcdn.net/jpg/03/24/49/49/360_F_324494941_WzGasaw9AfFTYaE79NA2C6nIDmrZjeP5.jpg"/>
-        <ClassComponent/>*/}
-    </section>
+        </div>
+
+
+
   )
 }
 export default App;
