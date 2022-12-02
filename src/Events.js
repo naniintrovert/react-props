@@ -1,22 +1,40 @@
 import {Component} from 'react'
+class Events extends Component{
 
- class Events extends Component{
- 	state={
- 		username:""
- 	}
- 	handleChange=()=>{
- 		alert()
- 	}
- 	
- render(){
- 	return(
- 		<div>
- 			<input
- 				onChange={this.handleChange}
- 				placeholder="Enter username"/>
+    state={
+        username:"",
+        password:""
+    }
+    handleClick=()=>{
+        console.log(this.state.username)
+        console.log(this.state.password)
+    }
+    handleChange=(e)=>{
+        this.setState({
+            [e.target.name]:e.target.value,
+            
+        })
 
-		</div>
-	)
-   }
+    }
+    render(){
+        return(
+            <div>
+                <input
+                name="username"
+                password="password"
+                onChange={this.handleChange}
+                placeholder="Enter username"/>
+                <input
+                name="password"
+                onChange={this.handleChange}
+                placeholder="Enter password"/>
+                <button onClick={this.handleClick}>submit</button>
+
+
+           </div>
+
+            )
+    }
 }
- export default  Events
+
+export default Events
